@@ -1,0 +1,12 @@
+/* Pages légales des apps de Charles Venayre : papier et encre, lisible sur téléphone. */
+:root { color-scheme: light dark; --papier: #F7F4EE; --encre: #16150F; --encre2: #6E6A60; --accent: #1F5A63; }
+@media (prefers-color-scheme: dark) { :root { --papier: #121212; --encre: #F4F1EA; --encre2: #A8A398; --accent: #7FB8C2; } }
+body { margin: 0; background: var(--papier); color: var(--encre); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+h1 { font-size: 30px; line-height: 1.15; margin: 4px 0 8px; }
+h2 { font-size: 20px; margin: 28px 0 6px; }
+p { margin: 0 0 12px; }
+.app { color: var(--encre2); font-weight: 600; margin: 0; }
+.meta { color: var(--encre2); font-size: 14px; margin-bottom: 24px; }
+a { color: var(--accent); }
+ul { padding-left: 20px; }
