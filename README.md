@@ -26,5 +26,6 @@ style.css                         feuille commune, index.html liste toutes les a
 |---|---|---|
 | `carburant` | Carburant (édition particulier) | `Developer/Carburant/Carburant/Views/Soutien/Legal.swift` |
 | `carburant-pro` | Carburant Pro | idem, `Legal.cgu(.pro)` |
+| `resiste` | Résiste ! (+ `index.html` : page de support, URL support d'App Store Connect) | `Developer/Resiste/Resiste/Services/Legal.swift`, export `Scripts/export_legal.sh` |
 
-À migrer ici quand l'occasion se présente : Ceramist (`legal` Supabase), Predisport (site React), Résiste.
+À migrer ici quand l'occasion se présente : Ceramist (`legal` Supabase), Predisport (site React).
