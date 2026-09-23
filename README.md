@@ -12,8 +12,9 @@ Supabase ou un site React : une URL stable par document, HTTP 200 garanti, versi
 style.css                         feuille commune, index.html liste toutes les apps
 ```
 
-- **Le texte vit dans l'app** (fichier `Legal.swift` ou équivalent), affiché dans l'app même hors ligne ; les pages HTML
-  sont **générées** par un script du projet de l'app (`scripts/export_legal.sh` dans Carburant), jamais éditées ici à la main.
+- **Le texte vit dans le projet de l'app** (`Legal/*.md`, embarqués dans le bundle et affichés hors ligne) ; les pages
+  HTML sont **générées** par `pk legal --root <projet> --out <ce dépôt>` (outil PlatformKit), jamais éditées ici à la
+  main. Anciens projets : un `scripts/export_legal.sh` maison, à migrer vers `pk legal` à l'occasion.
 - Une édition = un slug (`carburant`, `carburant-pro`). Une langue = un suffixe si besoin (`cgu.en.html`).
 - Dans l'app : `Legal.cguURL` / `Legal.privacyURL` pointent ici ; dans App Store Connect : mêmes URL, et la ligne
   « Conditions d'utilisation (EULA) : … » en fin de description (check-list `~/.claude/app-store-review-checklist.md`).
@@ -24,8 +25,8 @@ style.css                         feuille commune, index.html liste toutes les a
 
 | Slug | App | Source |
 |---|---|---|
-| `carburant` | Carburant (édition particulier) | `Developer/Carburant/Carburant/Views/Soutien/Legal.swift` |
-| `carburant-pro` | Carburant Pro | idem, `Legal.cgu(.pro)` |
+| `carburant` | Je fais le plein ? (édition particulier) | `Developer/Carburant/Legal/*.md` (`pk legal --root .`) |
+| `carburant-pro` | On fait le plein ? (édition professionnelle) | `Developer/Carburant/LegalPro/Legal/*.md` (`pk legal --root LegalPro`) |
 | `antidepense` | Anti-Dépense (+ `index.html` : page de support, URL support d'App Store Connect) | `Developer/Resiste/Resiste/Services/Legal.swift`, export `Scripts/export_legal.sh` |
 
 À migrer ici quand l'occasion se présente : Ceramist (`legal` Supabase), Predisport (site React).
