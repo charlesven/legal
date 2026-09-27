@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Cyber</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<p class="app">Cyber</p>
+<h1>Politique de confidentialité</h1>
+<p class="meta">Mise à jour le 26 septembre 2026 · <a href="cgu.html">Conditions d'utilisation</a> · <a href="./">Support</a> · <a href="../">Toutes les apps</a></p>
+<h2>Responsable</h2>
+<p>Charles Venayre, éditeur de Cyber. Contact : charlesvenayre@me.com. Cette politique décrit les données que Cyber traite, pourquoi, avec qui elles sont partagées et combien de temps elles sont conservées.</p>
+<h2>Compte</h2>
+<p>À l'inscription, Cyber enregistre votre identifiant Sign in with Apple (l'adresse e-mail qu'Apple lui transmet, éventuellement une adresse de relais, déjà vérifiée par Apple) ou, si votre organisation a activé la connexion unique, l'identifiant transmis par votre fournisseur d'identité ; un contrôle ne peut être lancé qu'avec une adresse vérifiée. Cyber n'envoie aucun e-mail : cette adresse sert à vous identifier, jamais à vous écrire. Ces données sont conservées tant que le compte existe et servent à identifier qui utilise le service et qui a signé les accords de contrôle approfondi. Supprimer le compte depuis les Réglages efface ces données sur le serveur, sous réserve des durées de conservation ci-dessous.</p>
+<h2>Domaines et résultats de contrôle</h2>
+<ul>
+<li><strong>Les domaines que vous déclarez</strong>, leur état de vérification (jeton DNS ou fichier déposé) et l'organisation à laquelle ils sont rattachés.</li>
+<li><strong>Les résultats de chaque contrôle</strong> : constats techniques (passifs puis, le cas échéant, approfondis), note, historique, et l'interprétation automatisée du rapport (voir plus bas).</li>
+<li><strong>Les accords de contrôle approfondi que vous signez</strong> (périmètre, exclusions, dates, mode, signataire : nom, fonction et adresse du compte qui signe), le document signé et son empreinte, <strong>la preuve de la signature dans l'application</strong> (horodatage, identifiant et adresse du compte, adresse IP de la signature, appareil et méthode de confirmation : Face ID, Touch ID ou code de l'appareil, ou code de double authentification ; Cyber ne reçoit jamais votre visage, votre empreinte ni le code de votre appareil, seulement le fait que la confirmation a réussi), ainsi que <strong>le journal d'audit</strong> de chaque contrôle (qui a lancé, quelle autorisation, quelles cibles, quels outils, horodatage). Ces deux éléments sont conservés <strong>cinq ans</strong>, la durée de prescription applicable, y compris après la suppression de votre compte.</li>
+<li><strong>Les résultats bruts de chaque contrôle</strong> (preuves techniques détaillées) sont conservés <strong>douze mois</strong>, puis supprimés ; seuls les constats normalisés et le rapport restent au-delà.</li>
+<li><strong>La surveillance des domaines surveillés</strong> : pour détecter qu'un site a été piraté ou défiguré, Cyber garde une référence de sa page d'accueil telle qu'un visiteur la voit : un <strong>extrait de son texte visible</strong> (2 000 caractères au plus) accompagné d'une empreinte de la page, son titre, les adresses des scripts qu'elle charge et les réponses DNS publiques du domaine. Seul le dernier extrait est conservé : il est remplacé à chaque contrôle et supprimé dès que vous retirez le domaine de la surveillance. Il ne contient que ce que la page affiche publiquement : Cyber n'ouvre aucun formulaire ni aucune page réservée.</li>
+</ul>
+<h2>Microsoft 365 et Google Workspace (lecture seule)</h2>
+<p>Si vous connectez votre compte Microsoft 365 ou Google Workspace, avec le consentement d'un administrateur, Cyber lit, en lecture seule et sans jamais rien modifier : la liste des comptes de votre organisation et leurs noms, l'état de la double authentification par personne, les journaux de connexion (anciennes méthodes d'authentification, dernière connexion), les règles de transfert d'e-mails vers l'extérieur, le partage externe de documents et l'état du journal d'audit. Cyber ne lit jamais le contenu de vos messages ni celui de vos fichiers. Le jeton d'accès est chiffré (AES-256-GCM) et n'est jamais lisible en clair après son enregistrement. Vous pouvez couper cette connexion à tout moment depuis l'application, ou directement chez Microsoft ou Google. Conservation : le dernier résultat de contrôle par fournisseur.</p>
+<h2>Organisation : membres, invitations et commentaires</h2>
+<p>Si votre organisation compte plusieurs personnes (offre Pro), voici ce qui est partagé en plus de votre compte :</p>
+<ul>
+<li><strong>Membres</strong> : chaque membre voit l'adresse e-mail et le rôle (propriétaire, administrateur ou lecteur) de tous les autres membres de son organisation, pour savoir qui a accès à quoi.</li>
+<li><strong>Invitations</strong> : une invitation est un lien que vous partagez vous-même (message, messagerie…) ; Cyber n'envoie aucun e-mail. Elle enregistre le rôle proposé, qui l'a créée et, si vous l'indiquez, l'adresse du seul compte qui pourra l'accepter ; le lien lui-même n'est jamais conservé (seule son empreinte l'est). Une invitation est conservée 30 jours après son expiration ou son annulation, puis supprimée.</li>
+<li><strong>Commentaires sur un constat</strong> : le texte que vous écrivez, son auteur et ses dates de création et de modification sont visibles par tous les membres de l'organisation. Si vous supprimez un commentaire, son texte est effacé aussitôt ; seule la trace qu'un message a existé (auteur, dates) reste dans l'historique.</li>
+</ul>
+<h2>Clés d'API et journal d'audit</h2>
+<p>Si vous créez une clé d'API pour connecter vos propres outils, Cyber conserve son nom, qui l'a créée, sa portée (lecture seule, ou lecture et lancement de contrôle) et la date de son dernier usage — jamais votre adresse IP, ni la clé elle-même une fois qu'elle vous a été affichée à sa création.</p>
+<p>Le journal d'audit décrit plus haut (signature d'un accord, lancement ou arrêt d'un contrôle) garde l'adresse IP de la personne qui a agi ; il est conservé cinq ans, comme le reste de ce journal. Les autres actions de votre organisation (inviter un membre, créer une clé, configurer une intégration…) sont journalisées sans adresse IP.</p>
+<h2>Webhooks d'API et export SIEM</h2>
+<p>Offre Pro : vous pouvez configurer un ou plusieurs webhooks vers votre propre système, et une destination SIEM (Splunk, QRadar, ou tout collecteur compatible CEF ou JSON), à l'adresse de votre choix.</p>
+<ul>
+<li><strong>Webhooks d'API</strong> : sur l'URL que vous fournissez, Cyber envoie un événement (contrôle terminé, nouveau constat, constat corrigé, nouvelle alerte) qui contient le détail du constat concerné, pas seulement son titre. Chaque message est signé par un secret propre à ce webhook, pour que vous puissiez vérifier qu'il vient bien de Cyber ; ce secret ne vous est jamais réaffiché après sa création et n'est transmis à personne d'autre.</li>
+<li><strong>Export SIEM</strong> : en plus des mêmes événements, une destination SIEM reçoit la totalité du journal d'audit de votre organisation (action, identifiant de son auteur, cible, adresse IP), au format CEF ou JSON. La valeur de l'en-tête d'authentification que vous fournissez pour cette destination est chiffrée avant d'être enregistrée.</li>
+<li><strong>Historique des livraisons</strong>, pour webhooks et export SIEM : conservé 30 jours pour vous permettre de vérifier qu'un message est bien parti, puis supprimé.</li>
+</ul>
+<h2>Connecteurs cloud</h2>
+<p>Offre Pro : si vous connectez, avec des droits de lecture seule que vous accordez vous-même, un compte cloud (AWS, Azure, Google Cloud, OVHcloud, Scaleway) ou un service DNS (Cloudflare, la zone DNS d'OVH, Gandi, ou la zone Route 53 de votre compte AWS), Cyber conserve :</p>
+<ul>
+<li>Les identifiants de connexion, chiffrés, jamais lisibles par un membre de votre organisation ni par vous.</li>
+<li>Un inventaire de ce que ce compte contient (serveurs, bases de données, stockage, pare-feux, utilisateurs, rôles et groupes), et le résultat du dernier examen de sécurité de cet inventaire : seul ce dernier résultat est gardé, il remplace le précédent à chaque nouvelle synchronisation.</li>
+</ul>
+<p>Déconnecter un compte efface aussitôt ses identifiants et son inventaire.</p>
+<h2>Outils de tickets</h2>
+<p>Offre Pro : si vous connectez GLPI, Trello ou GitHub Issues pour suivre vos constats comme des tickets, Cyber conserve le jeton d'accès à cet outil, chiffré, jamais lisible par un membre de votre organisation. Créer un ticket lui envoie le contenu du constat concerné (titre, cible, gravité, preuve technique et correctif proposé). Déconnecter l'outil efface aussitôt son jeton d'accès.</p>
+<h2>Authentification unique (SSO)</h2>
+<p>Offre Pro : si votre organisation active la connexion unique (SSO) auprès de votre fournisseur d'identité, Cyber retient le domaine e-mail de votre entreprise et l'identifiant technique de votre fournisseur, pour savoir vers qui rediriger la connexion. Les informations transmises à chaque connexion (nom, adresse, groupes…) sont celles que votre fournisseur d'identité choisit d'envoyer ; elles restent dans le système d'authentification (Supabase Auth, voir Sous-traitants) et ne sont jamais recopiées ailleurs dans Cyber.</p>
+<h2>Audits par un cabinet partenaire</h2>
+<p>Non proposé pour l'instant : la demande de devis d'audit humain (pentest) auprès d'un cabinet partenaire est en pause et n'est pas accessible dans l'application ni sur le site. Aucune donnée n'est collectée ni transmise à un cabinet à ce titre. Si ce service est rouvert, cette section décrira à nouveau ce qui est conservé et transmis, avant sa mise à disposition.</p>
+<h2>Marque blanche</h2>
+<p>Offre Pro : vous pouvez personnaliser vos rapports avec votre logo, vos couleurs et un pied de page. Ces éléments sont visibles par les membres de votre organisation et par les destinataires de vos rapports ; ils sont supprimés quand vous les retirez ou fermez votre organisation.</p>
+<h2>Serveur MCP</h2>
+<p>Vous pouvez brancher un assistant compatible MCP (Claude ou un autre) sur vos données Cyber, avec une clé d'API que vous créez vous-même. Ce serveur fonctionne chez vous, avec votre propre clé : Cyber ne voit passer que les appels d'API qu'il fait en votre nom, comme n'importe quel accès par clé d'API — jamais les questions posées à l'assistant ni ses réponses.</p>
+<h2>Canaux d'alerte : Slack, Microsoft Teams, webhook</h2>
+<p>Si vous configurez une alerte vers Slack, Microsoft Teams ou une adresse webhook de votre choix, Cyber envoie, sur l'URL que vous avez fournie, le titre de l'alerte et une courte description (qui peut nommer le constat concerné, par exemple « Certificat bientôt expiré »), jamais vos identifiants Slack ou Teams ni les preuves techniques détaillées d'un constat. Un webhook générique est signé (HMAC) pour que vous puissiez vérifier que le message vient bien de Cyber.</p>
+<p>C'est différent des webhooks d'API et des exports SIEM de l'offre Pro, décrits plus haut : vous les configurez vous-même pour votre outil de sécurité, et ils transmettent le détail complet de chaque constat ainsi que, pour un export SIEM, l'ensemble du journal d'audit de votre organisation.</p>
+<h2>Outils gratuits du site</h2>
+<p>Les outils gratuits du site web (« Vos e-mails peuvent-ils être imités ? », « Le cadenas de votre site ») s'utilisent sans compte. Le nom de domaine saisi et le résultat sont conservés 24 heures (7 jours au plus avant purge) pour éviter de recontrôler le même site. Votre adresse IP n'est jamais conservée : seule une empreinte HMAC (une IP rendue illisible, que Cyber ne peut pas reconvertir en adresse) sert à limiter le nombre de contrôles par adresse, et elle est effacée après deux jours.</p>
+<h2>Finalités et bases légales</h2>
+<p>Ces données servent à fournir le contrôle que vous demandez, à établir et faire respecter les accords de contrôle approfondi, à assurer la sécurité et la traçabilité du service, et à vous assister. Le traitement repose sur l'exécution du contrat qui vous lie à l'éditeur (vous fournir le service demandé) et, pour la conservation des accords et journaux, sur l'intérêt légitime de l'éditeur à se prémunir en cas de litige et sur ses obligations en matière de preuve.</p>
+<h2>Sous-traitants</h2>
+<p>Cyber fait appel aux sous-traitants suivants, chacun limité aux données nécessaires à sa tâche :</p>
+<ul>
+<li><strong>Supabase</strong> (hébergement de la base de données, de l'authentification et des fichiers), dans l'Union européenne.</li>
+<li><strong>Apple</strong> (Sign in with Apple, achats via l'App Store) : nous recevons son identifiant et l'état de vos achats, jamais vos moyens de paiement.</li>
+<li><strong>Anthropic</strong>, pour l'interprétation automatisée des résultats de chaque contrôle. Il reçoit les constats déjà normalisés (identifiants techniques, textes de correctifs), le profil déclaré de votre entreprise et, si des adresses e-mail ont fuité, leur nombre par domaine. Il ne reçoit jamais les adresses e-mail elles-mêmes, un mot de passe, votre identité de compte ou le contenu d'un accord signé.</li>
+<li><strong>Have I Been Pwned</strong>, pour vérifier si des adresses de votre domaine figurent dans des fuites connues : notre serveur l'interroge par domaine, sans lui transmettre votre identité.</li>
+<li><strong>Shodan</strong>, <strong>crt.sh</strong> (registre public des certificats) et des services équivalents d'inventaire d'Internet, pour identifier ce qui est visible publiquement depuis les domaines et adresses IP que vous déclarez.</li>
+<li><strong>Google Safe Browsing</strong>, pour vérifier si un site que vous surveillez est signalé dangereux.</li>
+<li><strong>Microsoft</strong> et <strong>Google</strong>, si vous connectez votre compte Microsoft 365 ou Google Workspace : ils nous transmettent, avec le consentement d'un administrateur, les données de lecture seule décrites plus haut.</li>
+<li><strong>Slack</strong> et <strong>Microsoft Teams</strong>, si vous configurez une alerte vers l'un de ces canaux : ils reçoivent le titre de chaque alerte et une courte description, sur l'URL que vous avez fournie.</li>
+<li><strong>Cloudflare Pages</strong>, pour héberger le site web de Cyber (accueil, outils gratuits, espace connecté).</li>
+<li><strong>Apple Push Notification service</strong>, pour acheminer les notifications de l'application vers votre appareil (voir Notifications).</li>
+<li><strong>L'hébergeur des workers de contrôle approfondi</strong>, situé en France, qui exécute les tests techniques autorisés (prestataire non encore désigné à ce stade du projet).</li>
+<li><strong>L'hébergeur du serveur qui met en forme vos documents PDF</strong> (accord de contrôle approfondi et rapport de contrôle), situé en France : ce serveur, que nous exploitons nous-mêmes, ne fait que transformer vos données en document, sans les conserver ni les transmettre à un tiers (prestataire non encore désigné à ce stade du projet).</li>
+<li>La signature électronique de l'accord de contrôle approfondi est réalisée par nos soins, dans l'application, par le compte du signataire (déclaration acceptée, confirmation sur l'appareil ou par le code de double authentification) : nous ne faisons pas appel à un prestataire de signature électronique tiers, et Cyber n'envoie aucun e-mail.</li>
+</ul>
+<p>Les destinataires suivants ne sont pas des sous-traitants de Cyber : ce sont les vôtres, que vous choisissez vous-même de connecter ou dont vous fournissez l'adresse. Cyber ne leur envoie que ce qui est décrit dans les sections correspondantes ci-dessus :</p>
+<ul>
+<li><strong>GLPI, Trello ou GitHub Issues</strong>, si vous les connectez pour suivre vos constats comme des tickets.</li>
+<li><strong>Votre fournisseur cloud</strong> (AWS, Azure, Google Cloud, OVHcloud, Scaleway) ou <strong>DNS</strong> (Cloudflare, OVH, Gandi, Route 53), si vous connectez un compte en lecture seule.</li>
+<li><strong>Le webhook ou la destination SIEM</strong> dont vous fournissez l'adresse.</li>
+<li><strong>Votre fournisseur d'identité</strong>, si vous activez la connexion unique (SSO) de votre organisation.</li>
+</ul>
+<h2>Statistiques d'usage</h2>
+<p>Écrans ouverts, événements d'usage, durées de session, version de l'application, système, modèle d'appareil, langue et pays sont envoyés à chaque utilisation, rattachés au jeton de votre session (JWT) et donc à votre compte. Finalité : mesurer l'usage, diagnostiquer les problèmes et améliorer l'application. Ces statistiques sont <strong>pseudonymes</strong> : rattachées à votre compte pour les besoins de la mesure, jamais utilisées pour vous démarcher ni transmises à un annonceur ; aucun identifiant publicitaire n'est utilisé et rien n'est revendu. Elles ne comprennent jamais le contenu d'un rapport, un domaine, une adresse e-mail fuitée ou le texte d'un accord. Conservation : 13 mois. Cette collecte n'a pas d'interrupteur dans les réglages de l'application ; pour vous y opposer, écrivez à charlesvenayre@me.com.</p>
+<h2>Notifications</h2>
+<p>Si vous autorisez les notifications, Cyber vous prévient de la fin d'un contrôle, d'une nouvelle alerte de sécurité (faille découverte, certificat ou nom de domaine qui approche de son expiration, fuite de mots de passe) ou d'une perte de vérification de domaine. Si vous êtes propriétaire ou administrateur d'une organisation, Cyber vous prévient aussi du lancement de chaque contrôle approfondi (lancé depuis l'application, planifié par la surveillance ou relancé à la publication d'une faille), avec la possibilité de l'arrêter depuis la notification. Ces notifications contiennent le nom du domaine concerné et le type de contrôle ; elles sont acheminées par le service de notifications d'Apple, à partir d'un jeton propre à votre appareil, enregistré avec votre compte. Cyber n'envoie aucun e-mail : ces notifications et l'application sont ses seuls moyens de vous prévenir. Cyber ne vous envoie jamais de notification au sujet d'un essai, d'un abonnement, d'un renouvellement ou d'un paiement : ces messages relèvent d'Apple. Le jeton de notification est supprimé si vous désactivez les notifications ou supprimez votre compte.</p>
+<h2>Retours</h2>
+<p>Le formulaire « Une idée, un problème ? » envoie votre message avec la version de l'application, la plateforme, la langue et, si vous l'ajoutez, une capture d'écran, pour y répondre. Ces retours sont conservés le temps de les traiter.</p>
+<h2>Cookies</h2>
+<p>Le site web de Cyber (accueil, outils gratuits, espace connecté) ne dépose aucun cookie de suivi ni publicitaire. L'espace connecté garde votre session dans le stockage local de votre navigateur pour vous laisser connecté d'une visite à l'autre ; cette information reste sur votre appareil, n'est jamais envoyée à un tiers et disparaît si vous l'effacez. Les pages légales (conditions d'utilisation, politique de confidentialité), hébergées séparément sur GitHub Pages, n'en déposent pas non plus.</p>
+<h2>Durées de conservation</h2>
+<p>En résumé, la durée de conservation de chaque donnée :</p>
+<ul>
+<li><strong>Compte</strong> (identifiant, e-mail) : tant que le compte existe.</li>
+<li><strong>Jeton de notification de l'appareil</strong> : tant que les notifications sont autorisées et que le compte existe.</li>
+<li><strong>Domaines déclarés, résultats normalisés, note, historique</strong> : tant que le domaine est suivi ; effacés avec le compte.</li>
+<li><strong>Résultats bruts d'un contrôle</strong> (preuves techniques détaillées) : 12 mois.</li>
+<li><strong>Accords de contrôle approfondi signés et journal d'audit</strong> : 5 ans, y compris après suppression du compte.</li>
+<li><strong>Extrait de page pour la détection de défiguration</strong> : le dernier extrait seulement, supprimé dès que le domaine n'est plus surveillé.</li>
+<li><strong>Résultats de posture Microsoft 365 / Google Workspace</strong> : le dernier résultat par fournisseur.</li>
+<li><strong>Outils gratuits du site</strong> (résultat par domaine) : 24 heures (7 jours au plus avant purge).</li>
+<li><strong>Empreinte HMAC d'adresse IP</strong> (outils gratuits) : 2 jours.</li>
+<li><strong>Statistiques d'usage</strong> : 13 mois.</li>
+<li><strong>Retours</strong> (« Une idée, un problème ? ») : le temps de les traiter.</li>
+<li><strong>Membres de l'organisation</strong> : tant que la personne en fait partie.</li>
+<li><strong>Invitations</strong> : 30 jours après expiration ou révocation.</li>
+<li><strong>Commentaires sur un constat</strong> : tant que le constat existe ; texte effacé aussitôt en cas de suppression.</li>
+<li><strong>Clés d'API</strong> : tant que l'organisation existe.</li>
+<li><strong>Adresses IP du journal d'audit</strong> (signature d'un accord, lancement ou arrêt d'un contrôle) : 5 ans, comme le reste de ce journal.</li>
+<li><strong>Historique de livraison des webhooks d'API et des exports SIEM</strong> : 30 jours.</li>
+<li><strong>Connecteurs cloud</strong> (identifiants, inventaire) : jusqu'à la déconnexion, effacés aussitôt ensuite ; seul le dernier résultat de synchronisation est gardé.</li>
+<li><strong>Jetons des outils de tickets</strong> (GLPI, Trello, GitHub) : jusqu'à la déconnexion, effacés aussitôt ensuite.</li>
+<li><strong>Marque blanche</strong> (logo, couleurs, pied de page) : jusqu'à ce que vous les retiriez.</li>
+</ul>
+<h2>Mineurs</h2>
+<p>Cyber est un outil professionnel destiné aux entreprises et à leurs représentants ; il ne s'adresse pas aux enfants et ne collecte pas sciemment leurs données.</p>
+<h2>Vos droits</h2>
+<p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition et de portabilité sur vos données. Vous pouvez supprimer votre compte depuis les Réglages de l'application, ce qui efface vos données sur le serveur à l'exception des accords signés et des journaux d'audit, conservés cinq ans (voir plus haut). Pour toute autre demande : charlesvenayre@me.com. Vous pouvez également saisir la CNIL.</p>
+<h2>Modifications</h2>
+<p>Cette politique peut évoluer ; la date de mise à jour figure en tête de page et, en cas de changement important, vous en serez informé dans l'application.</p>
+</main>
+</body>
+</html>
