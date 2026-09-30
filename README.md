@@ -15,7 +15,7 @@ style.css                         feuille commune, index.html liste toutes les a
 - **Le texte vit dans le projet de l'app** (`Legal/*.md`, embarqués dans le bundle et affichés hors ligne) ; les pages
   HTML sont **générées** par `pk legal --root <projet> --out <ce dépôt>` (outil PlatformKit), jamais éditées ici à la
   main. Anciens projets : un `scripts/export_legal.sh` maison, à migrer vers `pk legal` à l'occasion.
-- Une édition = un slug (`carburant`, `carburant-pro`). Une langue = un suffixe si besoin (`cgu.en.html`).
+- Une app = un slug (`carburant`). Une langue = un suffixe si besoin (`cgu.en.html`).
 - Dans l'app : `Legal.cguURL` / `Legal.privacyURL` pointent ici ; dans App Store Connect : mêmes URL, et la ligne
   « Conditions d'utilisation (EULA) : … » en fin de description (check-list `~/.claude/app-store-review-checklist.md`).
 - Mise en ligne : `git add -A && git commit -m "carburant: CGU du 21 septembre 2026" && git push` ; GitHub Pages
@@ -25,8 +25,7 @@ style.css                         feuille commune, index.html liste toutes les a
 
 | Slug | App | Source |
 |---|---|---|
-| `carburant` | Je fais le plein ? (édition particulier) | `Developer/Carburant/Legal/*.md` (`pk legal --root .`) |
-| `carburant-pro` | On fait le plein ? (édition professionnelle) | `Developer/Carburant/LegalPro/Legal/*.md` (`pk legal --root LegalPro`) |
+| `carburant` | Je fais le plein ? (version particulier et version Pro, une seule app depuis la 1.1 ; le slug `carburant-pro` de l'ancienne app Pro a été retiré le 30/09/2026) | `Developer/Carburant/Legal/*.md` (`pk legal --root .`) |
 | `antidepense` | Anti-Dépense (+ `index.html` : page de support, URL support d'App Store Connect) | `Developer/Resiste/Resiste/Services/Legal.swift`, export `Scripts/export_legal.sh` |
 
 À migrer ici quand l'occasion se présente : Ceramist (`legal` Supabase), Predisport (site React).
