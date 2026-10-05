@@ -26,6 +26,19 @@ style.css                         feuille commune, index.html liste toutes les a
 | Slug | App | Source |
 |---|---|---|
 | `carburant` | Je fais le plein ? (version particulier et version Pro, une seule app depuis la 1.1 ; le slug `carburant-pro` de l'ancienne app Pro a été retiré le 30/09/2026) | `Developer/Carburant/Legal/*.md` (`pk legal --root .`) |
-| `antidepense` | Anti-Dépense (+ `index.html` : page de support, URL support d'App Store Connect) | `Developer/Resiste/Resiste/Services/Legal.swift`, export `Scripts/export_legal.sh` |
+| `antidepense` | Anti-Dépense (+ `index.html` : page de support, URL support d'App Store Connect ; fr + en) | `Developer/Resiste/Legal/*.md` (`pk legal --root .` ; l'ancien `Scripts/export_legal.sh` et `Legal.swift` ont disparu) |
+| `envie` | Envies (fr + en) | `Developer/Envie/Legal/*.md` (`pk legal --root .` ; EULA ASC rejouée par `scripts/asc_eula.mjs --apply`) |
 
-À migrer ici quand l'occasion se présente : Ceramist (`legal` Supabase), Predisport (site React).
+Hors de ce dépôt, en attendant une migration : **Ceramist** et **Puzzle Contest** servent leurs pages depuis la
+fonction Supabase `legal` de leur projet (`https://mannxvoyxbfbnuyitmou.supabase.co/functions/v1/legal/cgu` et
+`https://hukhymphvuyduftogcpz.supabase.co/functions/v1/legal/cgu`, `?lang=en` pour l'anglais, texte brut sur
+`*.supabase.co`), source `supabase/functions/legal/index.ts` ; **Predisport** sur son site React.
+
+## EULA personnalisée d'App Store Connect (état au 05/10/2026)
+
+Les cinq apps ont une EULA personnalisée sur les 175 territoires, texte brut des CGU du jour (règle « si tu annules
+pendant l'essai gratuit, l'accès s'arrête immédiatement », et pour Anti-Dépense l'achat « à vie ») : Envies,
+Je fais le plein ?, Anti-Dépense (`Legal/cgu.md` → texte, mise en forme de `Envie/scripts/asc_eula.mjs`), Ceramist et
+Puzzle Contest (texte français servi par la fonction `legal`). La ligne « Conditions d'utilisation (EULA) : … » en fin
+de description pointe vers la page CGU de l'app, plus jamais vers la `stdeula` d'Apple. À rejouer après toute
+retouche des CGU, sinon l'app, le web et App Store Connect se contredisent.
