@@ -10,7 +10,7 @@
 <main>
 <p class="app">Cyber</p>
 <h1>Politique de confidentialité</h1>
-<p class="meta">Mise à jour le 7 octobre 2026 · <a href="cgu.html">Conditions d'utilisation</a> · <a href="./">Support</a> · <a href="../">Toutes les apps</a></p>
+<p class="meta">Mise à jour le 14 octobre 2026 · <a href="cgu.html">Conditions d'utilisation</a> · <a href="./">Support</a> · <a href="../">Toutes les apps</a></p>
 <h2>Responsable</h2>
 <p>Charles Venayre, éditeur de Cyber. Contact : charlesvenayre@me.com. Cette politique décrit les données que Cyber traite, pourquoi, avec qui elles sont partagées et combien de temps elles sont conservées.</p>
 <h2>Compte</h2>
@@ -25,6 +25,8 @@
 </ul>
 <h2>Microsoft 365 et Google Workspace (lecture seule)</h2>
 <p>Si vous connectez votre compte Microsoft 365 ou Google Workspace, avec le consentement d'un administrateur, Cyber lit, en lecture seule et sans jamais rien modifier : la liste des comptes de votre organisation et leurs noms, l'état de la double authentification par personne, les journaux de connexion (anciennes méthodes d'authentification, dernière connexion), les règles de transfert d'e-mails vers l'extérieur, le partage externe de documents et l'état du journal d'audit. Cyber ne lit jamais le contenu de vos messages ni celui de vos fichiers. Le jeton d'accès est chiffré (AES-256-GCM) et n'est jamais lisible en clair après son enregistrement. Vous pouvez couper cette connexion à tout moment depuis l'application, ou directement chez Microsoft ou Google. Conservation : le dernier résultat de contrôle par fournisseur.</p>
+<h2>Rapports DMARC</h2>
+<p>Si vous ajoutez à l'enregistrement DMARC de votre domaine l'adresse de réception que Cyber vous donne, les messageries (Gmail, Outlook, Yahoo…) envoient chaque jour à Cyber leurs rapports agrégés sur les e-mails reçus en votre nom. Cyber en garde : l'organisation qui a émis le rapport, la période couverte, votre politique DMARC publiée et, pour chaque serveur d'envoi, son adresse IP, le nombre d'e-mails, le résultat des vérifications SPF et DKIM, les domaines d'expédition et la décision appliquée. Ces rapports ne contiennent ni le contenu, ni l'objet, ni les destinataires des messages. Ils servent seulement à vous montrer qui envoie des e-mails en votre nom. Vous pouvez arrêter à tout moment en retirant l'adresse de votre enregistrement DMARC. Conservation : 13 mois après la fin de la période couverte.</p>
 <h2>Organisation : membres, invitations et commentaires</h2>
 <p>Si votre organisation compte plusieurs personnes (offre Pro), voici ce qui est partagé en plus de votre compte :</p>
 <ul>
@@ -63,20 +65,20 @@
 <h2>Outils gratuits du site</h2>
 <p>Les outils gratuits du site web (« Vos e-mails peuvent-ils être imités ? », « Le cadenas de votre site ») s'utilisent sans compte. Le nom de domaine saisi et le résultat sont conservés 24 heures (7 jours au plus avant purge) pour éviter de recontrôler le même site. Votre adresse IP n'est jamais conservée : seule une empreinte HMAC (une IP rendue illisible, que Cyber ne peut pas reconvertir en adresse) sert à limiter le nombre de contrôles par adresse, et elle est effacée après deux jours.</p>
 <h2>Finalités et bases légales</h2>
-<p>Ces données servent à fournir le contrôle que vous demandez, à établir et faire respecter les accords autorisant le contrôle de votre site, à assurer la sécurité et la traçabilité du service, et à vous assister. Le traitement repose sur l'exécution du contrat qui vous lie à l'éditeur (vous fournir le service demandé) et, pour la conservation des accords et journaux, sur l'intérêt légitime de l'éditeur à se prémunir en cas de litige et sur ses obligations en matière de preuve. La mesure des campagnes publicitaires (SDK Meta) repose sur votre consentement, que vous pouvez retirer à tout moment.</p>
+<p>Ces données servent à fournir le contrôle que vous demandez, à établir et faire respecter les accords autorisant le contrôle de votre site, à assurer la sécurité et la traçabilité du service, et à vous assister. Le traitement repose sur l'exécution du contrat qui vous lie à l'éditeur (vous fournir le service demandé) et, pour la conservation des accords et journaux, sur l'intérêt légitime de l'éditeur à se prémunir en cas de litige et sur ses obligations en matière de preuve. La mesure des campagnes publicitaires (SDK Meta) repose sur votre consentement, que vous pouvez retirer à tout moment. L'envoi de vos questions et des résultats d'un contrôle à Anthropic, pour l'interprétation et « Poser une question », repose aussi sur votre consentement, recueilli dans l'application.</p>
 <h2>Sous-traitants</h2>
 <p>Cyber fait appel aux sous-traitants suivants, chacun limité aux données nécessaires à sa tâche :</p>
 <ul>
 <li><strong>Supabase</strong> (hébergement de la base de données, de l'authentification et des fichiers), dans l'Union européenne.</li>
 <li><strong>Apple</strong> (Sign in with Apple, achats via l'App Store) : nous recevons son identifiant et l'état de vos achats, jamais vos moyens de paiement.</li>
-<li><strong>Anthropic</strong>, pour l'interprétation automatisée des résultats de chaque contrôle. Il reçoit les constats déjà normalisés (identifiants techniques, textes de correctifs), le profil déclaré de votre entreprise et, si des adresses e-mail ont fuité, leur nombre par domaine. Il ne reçoit jamais les adresses e-mail elles-mêmes, un mot de passe, votre identité de compte ou le contenu d'un accord signé.</li>
+<li><strong>Anthropic</strong> (modèles Claude), pour l'interprétation automatisée des résultats d'un contrôle et pour les réponses de « Poser une question », <strong>avec votre accord recueilli dans l'application</strong> : une fenêtre vous le demande à la première utilisation de ces fonctions, et sans votre accord ni vos questions ni les résultats des contrôles que vous lancez depuis l'application ne lui sont envoyés. Il reçoit les constats du contrôle concerné, déjà normalisés (identifiants techniques, textes de correctifs), le profil déclaré de votre entreprise, si des adresses e-mail ont fuité leur nombre par domaine, et, pour « Poser une question », les questions que vous tapez dans ce fil (les adresses e-mail qu'elles contiendraient sont masquées avant l'envoi). Ces données servent seulement à produire l'interprétation ou la réponse affichée. Selon les conditions commerciales d'Anthropic applicables à son API, les données transmises ne sont pas utilisées pour entraîner ses modèles ; Anthropic les conserve pour une durée limitée, notamment à des fins de sécurité. Il ne reçoit jamais les adresses e-mail elles-mêmes, un mot de passe, votre identité de compte ou le contenu d'un accord signé.</li>
 <li><strong>Have I Been Pwned</strong>, pour vérifier si des adresses de votre domaine figurent dans des fuites connues : notre serveur l'interroge par domaine, sans lui transmettre votre identité.</li>
 <li><strong>Shodan</strong>, <strong>crt.sh</strong> (registre public des certificats) et des services équivalents d'inventaire d'Internet, pour identifier ce qui est visible publiquement depuis les domaines et adresses IP que vous déclarez.</li>
-<li><strong>Google Safe Browsing</strong>, pour vérifier si un site que vous surveillez est signalé dangereux.</li>
+<li><strong>Google (Web Risk)</strong>, pour vérifier si un site que vous surveillez est signalé dangereux : il reçoit seulement l'adresse publique du site.</li>
 <li><strong>Microsoft</strong> et <strong>Google</strong>, si vous connectez votre compte Microsoft 365 ou Google Workspace : ils nous transmettent, avec le consentement d'un administrateur, les données de lecture seule décrites plus haut.</li>
 <li><strong>Slack</strong> et <strong>Microsoft Teams</strong>, si vous configurez une alerte vers l'un de ces canaux : ils reçoivent le titre de chaque alerte et une courte description, sur l'URL que vous avez fournie.</li>
 <li><strong>Meta Platforms Ireland</strong>, pour la mesure des campagnes publicitaires, <strong>uniquement si vous avez autorisé le suivi</strong> dans la fenêtre d'Apple (voir « Publicité et mesure des campagnes »).</li>
-<li><strong>Cloudflare Pages</strong>, pour héberger le site web de Cyber (accueil, outils gratuits, espace connecté).</li>
+<li><strong>Cloudflare Pages</strong>, pour héberger le site web de Cyber (accueil, outils gratuits, espace connecté), et <strong>Cloudflare Email Routing</strong>, pour recevoir les rapports DMARC que les messageries envoient à l'adresse de réception de Cyber (voir « Rapports DMARC »).</li>
 <li><strong>Apple Push Notification service</strong>, pour acheminer les notifications de l'application vers votre appareil (voir Notifications).</li>
 <li><strong>L'hébergeur des serveurs de test</strong>, Hetzner Online GmbH, en Allemagne (Union européenne), qui exécute les tests techniques que vous avez autorisés depuis des adresses fixes, listées dans l'application (« Qui teste votre site ») et dans votre accord signé.</li>
 <li>La signature électronique de l'accord autorisant le contrôle de votre site est réalisée par nos soins, dans l'application, par le compte du signataire (déclaration acceptée, confirmation sur l'appareil ou par le code de double authentification) : nous ne faisons pas appel à un prestataire de signature électronique tiers, et Cyber n'envoie aucun e-mail.</li>
@@ -115,6 +117,7 @@
 <li><strong>Accords signés (dont le nom et la fonction du signataire) et journal d'audit</strong> : 5 ans, y compris après suppression du compte.</li>
 <li><strong>Extrait de page pour la détection de défiguration</strong> : le dernier extrait seulement, supprimé dès que le domaine n'est plus surveillé.</li>
 <li><strong>Résultats de posture Microsoft 365 / Google Workspace</strong> : le dernier résultat par fournisseur.</li>
+<li><strong>Rapports DMARC agrégés</strong> : 13 mois après la fin de la période couverte.</li>
 <li><strong>Outils gratuits du site</strong> (résultat par domaine) : 24 heures (7 jours au plus avant purge).</li>
 <li><strong>Empreinte HMAC d'adresse IP</strong> (outils gratuits) : 2 jours.</li>
 <li><strong>Statistiques d'usage</strong> : 13 mois.</li>
