@@ -27,6 +27,7 @@ style.css                         feuille commune, index.html liste toutes les a
 |---|---|---|
 | `carburant` | Je fais le plein ? (version particulier et version Pro, une seule app depuis la 1.1 ; le slug `carburant-pro` de l'ancienne app Pro a été retiré le 30/09/2026) | `Developer/Carburant/Legal/*.md` (`pk legal --root .`) |
 | `antidepense` | Anti-Dépense (+ `index.html` : page de support, URL support d'App Store Connect ; fr + en) | `Developer/Resiste/Legal/*.md` (`pk legal --root .` ; l'ancien `Scripts/export_legal.sh` et `Legal.swift` ont disparu) |
+| `predisport` | Pêche en mer – Predisport, app **Android** : `cgu-android`, `confidentialite`, `suppression-compte` (page exigée par Google Play), fr + en/de/es/it (suppression : fr + en). L'iOS garde ses pages sur www.predisport.com | `~/Code/android/predisport-android` : `python3 scripts/export_legal.py <ce dépôt>` (texte de `ui/legal/LegalContent.kt` + `strings_legal.xml`, et `docs/DELETE_ACCOUNT_PAGE.md`) |
 | `envie` | Envies (fr + en) | `Developer/Envie/Legal/*.md` (`pk legal --root .` ; EULA ASC rejouée par `scripts/asc_eula.mjs --apply`) |
 
 Hors de ce dépôt, en attendant une migration : **Ceramist** et **Puzzle Contest** servent leurs pages depuis la
