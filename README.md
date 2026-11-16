@@ -25,14 +25,16 @@ style.css                         feuille commune, index.html liste toutes les a
 
 | Slug | App | Source |
 |---|---|---|
-| `carburant` | Je fais le plein ? (version particulier et version Pro, une seule app depuis la 1.1 ; le slug `carburant-pro` de l'ancienne app Pro a été retiré le 30/09/2026) | `Developer/Carburant/Legal/*.md` (`pk legal --root .`) |
-| `antidepense` | Anti-Dépense (+ `index.html` : page de support, URL support d'App Store Connect ; fr + en) | `Developer/Resiste/Legal/*.md` (`pk legal --root .` ; l'ancien `Scripts/export_legal.sh` et `Legal.swift` ont disparu) |
 | `predisport` | Pêche en mer – Predisport, app **Android** : `cgu-android`, `confidentialite`, `suppression-compte` (page exigée par Google Play), fr + en/de/es/it (suppression : fr + en). L'iOS garde ses pages sur www.predisport.com | `~/Code/android/predisport-android` : `python3 scripts/export_legal.py <ce dépôt>` (texte de `ui/legal/LegalContent.kt` + `strings_legal.xml`, et `docs/DELETE_ACCOUNT_PAGE.md`) |
 | `envie` | Envies (fr + en) | `Developer/Envie/Legal/*.md` (`pk legal --root .` ; EULA ASC rejouée par `scripts/asc_eula.mjs --apply`) |
 
-Hors de ce dépôt, en attendant une migration : **Ceramist** et **Puzzle Contest** servent leurs pages depuis la
-fonction Supabase `legal` de leur projet (`https://mannxvoyxbfbnuyitmou.supabase.co/functions/v1/legal/cgu` et
-`https://hukhymphvuyduftogcpz.supabase.co/functions/v1/legal/cgu`, `?lang=en` pour l'anglais, texte brut sur
+**Apps retirées de la vente le 14/11/2026, pages conservées** (les apps installées y renvoient ; l'abonné d'Anti-Dépense
+garde l'app jusqu'au 04/10/2027 : ne rien supprimer ici) : `antidepense` (Anti-Dépense, support + CGU + confidentialité)
+et `carburant` (Je fais le plein ?). Puzzle Contest n'a pas de page dans ce dépôt : ses pages étaient servies par la
+fonction Supabase `legal` de son projet, supprimé le 15/11/2026.
+
+Hors de ce dépôt, en attendant une migration : **Ceramist** sert ses pages depuis la
+fonction Supabase `legal` de son projet (`https://mannxvoyxbfbnuyitmou.supabase.co/functions/v1/legal/cgu`, `?lang=en` pour l'anglais, texte brut sur
 `*.supabase.co`), source `supabase/functions/legal/index.ts` ; **Predisport** sur son site React.
 
 ## EULA personnalisée d'App Store Connect (état au 05/10/2026)
